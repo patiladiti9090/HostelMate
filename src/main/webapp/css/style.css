@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #F8FAFC;
+}
+
+/* Navbar */
+.navbar {
+    background: rgba(79, 70, 229, 0.9);
+    backdrop-filter: blur(10px);
+}
+
+.navbar-brand {
+    font-weight: 600;
+    color: #fff !important;
+}
+input::placeholder {
+    color: #eee !important;
+}
+
+input {
+    color: black !important;
+}
+
+/* Hero */
+.hero {
+    height: 90vh;
+    background: url('../images/hostel.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Buttons */
+.btn-primary {
+    background: #4F46E5;
+    border: none;
+}
+
+.btn-primary:hover {
+    background: #6366F1;
+}

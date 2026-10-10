@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<web-app xmlns="https://jakarta.ee/xml/ns/jakartaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_5_0.xsd"
+         version="5.0">
+
+    <!-- ===================== -->
+    <!-- REGISTER -->
+    <!-- ===================== -->
+    <servlet>
+        <servlet-name>RegisterServlet</servlet-name>
+        <servlet-class>com.hostelmate.servlet.RegisterServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>RegisterServlet</servlet-name>
+        <url-pattern>/RegisterServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ===================== -->
+    <!-- LOGIN -->
+    <!-- ===================== -->
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>com.hostelmate.servlet.LoginServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ===================== -->
+    <!-- LOGOUT -->
+    <!-- ===================== -->
+    <servlet>
+        <servlet-name>LogoutServlet</servlet-name>
+        <servlet-class>com.hostelmate.servlet.LogoutServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>LogoutServlet</servlet-name>
+        <url-pattern>/LogoutServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ===================== -->
+    <!-- BOOKING -->
+    <!-- ===================== -->
+    <servlet>
+        <servlet-name>BookingServlet</servlet-name>
+        <servlet-class>com.hostelmate.servlet.BookingServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>BookingServlet</servlet-name>
+        <url-pattern>/BookingServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ===================== -->
+    <!-- COMPLAINT -->
+    <!-- ===================== -->
+    <servlet>
+        <servlet-name>ComplaintServlet</servlet-name>
+        <servlet-class>com.hostelmate.servlet.ComplaintServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ComplaintServlet</servlet-name>
+        <url-pattern>/ComplaintServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ===================== -->
+    <!-- ADD ROOM -->
+    <!-- ===================== -->
+    <servlet>
+        <servlet-name>AddRoomServlet</servlet-name>
+        <servlet-class>com.hostelmate.servlet.AddRoomServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>AddRoomServlet</servlet-name>
+        <url-pattern>/AddRoomServlet</url-pattern>
+    </servlet-mapping>
+
+    <!-- ===================== -->
+    <!-- DELETE ROOM -->
+    <!-- ===================== -->
+    <servlet>
+        <servlet-name>DeleteRoomServlet</servlet-name>
+        <servlet-class>com.hostelmate.servlet.DeleteRoomServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteRoomServlet</servlet-name>
+        <url-pattern>/DeleteRoomServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <servlet-class>com.hostelmate.servlet.AdminLoginServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>AdminLoginServlet</servlet-name>
+    <url-pattern>/AdminLoginServlet</url-pattern>
+</servlet-mapping>
+
+    <!-- ===================== -->
+    <!-- DEFAULT HOME PAGE -->
+    <!-- ===================== -->
+    <welcome-file-list>
+        <welcome-file>index.jsp</welcome-file>
+    </welcome-file-list>
+
+</web-app>
